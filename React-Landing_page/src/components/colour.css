@@ -1,0 +1,29 @@
+body .colOne{
+    color: #F2F2F2;
+  }
+  
+  body .colFive{
+    color: #FFFFFF;
+  }
+  
+  body .colTwo{
+    color: #333333;
+  }
+  
+  body .colThree{
+    color: #BDBDBD;
+  }
+  
+  body .colFour{
+    color: #000000;
+  }
+  
+  body .pushDown{
+    padding-bottom: 3%;
+  }
+  
+#colFiveOne{
+  background-color: #FFFFFF !important;
+  font-size: xx-large;
+}
+  

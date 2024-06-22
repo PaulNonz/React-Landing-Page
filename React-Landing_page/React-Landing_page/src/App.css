@@ -1,15 +1,9 @@
 #root {
-  max-width: 2560px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
-
-
-
-
-/*
-
-CUSTOM (CAME WITH REACT)
 
 .logo {
   height: 6em;
@@ -45,4 +39,4 @@ CUSTOM (CAME WITH REACT)
 
 .read-the-docs {
   color: #888;
-} */
+}

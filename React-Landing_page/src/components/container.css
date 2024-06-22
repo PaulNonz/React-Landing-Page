@@ -1,0 +1,139 @@
+body .container{
+    flex-wrap: wrap;  
+    padding: 2% 7%;
+    height: auto;
+    text-align: left;
+    height: 100%;
+  }
+
+  /*  contain: content; */
+  body .container2{
+    flex-wrap: wrap;  
+    padding: 3% 8%;
+    box-sizing: border-box;
+    height: auto;
+    text-align: left;
+  }
+
+  body .footer{
+    background-color: #2C2C2C;
+    padding: 0;
+    color: white;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  body .smallContainer{
+    overflow: hidden;
+    width: 100%;
+    height: 62%;
+    background-color: rgb(251, 243, 243);
+  }
+
+  body .smallContainer22{
+    overflow: hidden;
+    width: 100%;
+    height: 62%;
+    background-color: rgb(16, 3, 3);
+  }
+
+  body .smallContainer22 img{
+    opacity: 0.4;
+  }
+
+  body .smallContainerzero{
+    overflow: hidden;
+    width: 100%;
+    height: 73%;
+    background-color: rgb(251, 243, 243);
+  }
+
+  body .smallContainer1{
+    overflow: hidden;
+    width: 100%;
+    height: 67%;
+    margin-left: 12%;
+  }
+  body .smallContainer2{
+    overflow: hidden;
+    width: 100%;
+    height: 45%;
+    margin-top: -20%;
+    margin-left: 12%;
+  }
+
+  body .smallContainer3{
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+    margin-left: 6.4%;
+  }
+
+  /* body .smallContainerGuy img{
+    opacity: 0.4 !important;
+  } */
+
+  body .SubChildFlex{
+    display: flex;
+  }
+
+  body .Footcontainer{
+    flex-wrap: wrap;  
+    padding: 3% 8%;
+    box-sizing: border-box;
+    height: auto;
+    text-align: left;
+  }
+
+  body .flexer{
+    gap: 2.5%;
+  }
+  
+body .flexer:nth-child(1), .flexer:nth-child(2){
+  width: 15%;
+  }
+  
+  body .flexer:nth-child(1) img{
+    height: 30%;
+  }
+  
+  body .flexer:nth-child(3){
+    width: 32%;
+  }
+
+  body .flexer:nth-child(4){
+    width: 20%;
+  }
+  
+  body .bolder{
+    font-weight: bold;
+  }
+
+  body .footer p img{
+    padding-right: 4%;
+  }
+
+  body .footer p:nth-child(2){
+    width: 60%;
+}
+
+  body .imgFooterPushAway{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  body .diva{
+    display: flex;
+   gap: 6%;
+  }
+
+  body .diva img{
+    height: 10%;
+    margin-top: 1%;
+  }
+
+  body .diva p{
+    height: 10%;
+    margin-top: -1.2%;
+    padding-bottom: 15.4%;
+  }
