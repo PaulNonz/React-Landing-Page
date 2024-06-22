@@ -1,0 +1,116 @@
+
+h1{
+    position: relative;
+    top: 13%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 64px;
+    color: #BDBDBD;
+    line-height: 64px;
+    height: 64px;
+    display: flex;
+  }
+  
+  h2{
+    position: relative;
+    top: 8.2%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    color: #333333;
+    line-height: 64px;
+    width: 186px;
+    height: 64px;
+    display: flex;
+  }
+
+  /* Pseudo h2 */
+
+  h5{
+    position: relative;
+    top: 8.2%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    color: #FFFFFF;
+    line-height: 64px;
+    width: 186px;
+    height: 64px;
+    display: flex;
+  }
+  
+  h3{
+    font-size: 195px;
+    font-weight: 900;
+    line-height: 234.38px;
+    margin-top: -8%;
+    color: #F2F2F2;
+  }
+  
+  h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+    position: relative;
+    top: 12%;
+    display: flex;
+    width: 141.88px;
+    height: 52px;
+    padding-left: 0.5%;
+  }
+
+  body p{
+    /* line-height: 25px ;
+    /* font-size: 22px; */
+    font-family: "Roboto", sans-serif; 
+  }
+  
+  body .smallPtext{
+    font-size: 14px !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200 !important;
+    line-height: 19px;
+    width: 92%;
+    padding-top: 8.8%;
+  }
+
+  body .smallPtext2, .smallPtext3{
+    font-size: 16.5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+
+  body .smallPtext2{
+    line-height: 37px;
+    width: 54%;
+    margin-left: -2% !important;
+  } 
+
+body  .smallPtext3{
+  line-height: 30px;
+  width: 100%;
+  margin-left: 2% !important;
+}
+  
+body .reseraved-text{
+  color: #C8C8C8;
+  opacity: 0.5;
+  text-align: center !important;
+}
+
+body .just{
+  text-align: justify !important;
+  margin: 0;
+  padding: 0;
+}
+
+hr{
+  border: 1px solid #FFFFFF;
+}
+
+

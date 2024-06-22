@@ -1,0 +1,129 @@
+/* Hero-page and last section flex */
+
+body .TwoflexDividerOne, .TwoflexDividerOnee, .ThreeflexDiverOne, .FourflexDivider{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+}
+
+body .ThreeflexDiverOne:nth-child(1){
+    background-color: #FBFBFB;
+    padding-top: 4%;
+}
+
+body .ThreeflexDiverOne:nth-child(3){
+    padding-top: 4%;
+}
+
+body .coloumner:nth-child(1){
+    display: flexbox;
+    width: 40.5%;
+}
+
+body .coloumner:nth-child(1) input{
+    display: flexbox;
+    background-color: #F3F3F3;
+    width: 88.2%;
+    border: none;
+    padding: 2% 6%;
+    margin-bottom: 3%;
+}
+
+body .coloumner:nth-child(1) textarea{
+    display: flexbox;
+    background-color: #F3F3F3;
+    width: 88.2%;
+    height: 46.7%;
+    border: none;
+    padding: 2% 6%;
+    margin-bottom: 3%;
+}
+
+
+body .coloumner:nth-child(2){
+    display: flexbox;
+    contain: content;
+    width: 55%;
+}
+
+body .coloumner:nth-child(2) img{
+    transform: scale(1.001);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.7s;
+    width: 100%;
+}
+
+
+
+
+body .TwoflexDividerOne .TwoflexDividerChild1{
+    flex:0 0 40%;
+}
+body .TwoflexDividerOne .TwoflexDividerChild2{
+    flex: 0 0 56.5%;
+}
+body .TwoflexDividerChildOne1{
+    flex: 0 0 43.8%;
+}
+body .TwoflexDividerChildOne2{
+    flex: 0 0 56.2%;
+}
+body .sectioTakeup{
+    margin-top: -21%;
+}
+body .lorumTakeup{
+    margin-top: -4%;
+}
+  
+body .sectioTakeup2{
+    margin-top: -27%;
+}
+  
+
+
+/* About-page flex */
+
+body .ThreeflexDiverOne .ThreeflexDiverOneChild1{
+    flex:0 0 30%;
+    margin-bottom: 3%;
+}
+body .ThreeflexDiverOne .ThreeflexDiverOneChild2{
+    flex: 0 0 30%;
+    margin-bottom: 3%;
+}
+body .ThreeflexDiverOne .ThreeflexDiverOneChild3{
+    flex: 0 0 30%;
+    margin-bottom: 3%;
+}
+
+body .flyGuy{
+    width: 30%;
+    position: relative;
+    left: -8.3%;
+    margin-top: -17%;
+}
+
+/* Focus-Mission flex*/
+
+body .TwoflexDividerOne .TwoflexDivider2Child1{
+    flex:0 0 47.5%;
+    margin-bottom: 3%;
+}
+body .TwoflexDividerOne .TwoflexDivider2Child2{
+    flex:0 0 47.5%;
+    margin-bottom: 3%;
+}
+
+body .logoFootPusher{
+    margin-top: 2.5%;
+}
+
+/* Footer flex */
+
+
+
+@media (max-width: 760px) {
+    
+}
