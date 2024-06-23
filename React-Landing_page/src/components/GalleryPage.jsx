@@ -1,7 +1,6 @@
 import React from 'react';
 import backIcon from '../img/arrow-left.png'
 import frontIcon from '../img/arrow-right.png'
-import './button.css'
 import galone from '../img/PageGal01.png'
 import galtwo from '../img/PageGal02.png'
 import galthree from '../img/PageGal03.png'
