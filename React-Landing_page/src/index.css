@@ -31,13 +31,18 @@ nav #navbarEish{
   align-content: center;
   padding-top: 2%;
   margin: 0;
-  width: 58%;
+  width: 56.2%;
 }
 nav img{
   width: auto;
   height: 76%;
   padding-top: 0.8%;
 }
+
+body nav ul{
+  list-style-type: none;
+}
+
 a {
   font-weight: 400;
   font-size: 12px;

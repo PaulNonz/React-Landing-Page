@@ -55,9 +55,6 @@ body .coloumner:nth-child(2) img{
     width: 100%;
 }
 
-
-
-
 body .TwoflexDividerOne .TwoflexDividerChild1{
     flex:0 0 40%;
 }
@@ -80,8 +77,6 @@ body .lorumTakeup{
 body .sectioTakeup2{
     margin-top: -27%;
 }
-  
-
 
 /* About-page flex */
 
@@ -121,7 +116,6 @@ body .logoFootPusher{
 }
 
 /* Footer flex */
-
 
 
 @media (max-width: 760px) {

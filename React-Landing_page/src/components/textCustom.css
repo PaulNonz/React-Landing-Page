@@ -118,4 +118,14 @@ hr{
   margin-top: -2%;
 }
 
+body .textWider{
+position: relative;
+/* margin-top: 4%; */
+top: 46%;
+left: -50%;
+}
+
+body .TextColNew{
+  color: #333333;
+}
 
