@@ -1,4 +1,5 @@
 // import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './container.css';
 import './bodyFlex.css';
 import './button.css';
@@ -34,8 +35,23 @@ import Call from '../img/CallIcon.png'
 import Message from '../img/messageIcon.png'
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleGalleryClick = () => {
+      navigate('/gallery');
+    };
+  
+    const handleProjectsClick = () => {
+      navigate('/projects');
+    };
+
+    const handleContactsClick = () => {
+        navigate('/contacts');
+    };
+
+
     return (
-        <div>
+        <div className='hide'>
             <section className="container">
                 <div className='TwoflexDividerOne'>
                     <div className='TwoflexDividerChildOne1'>
@@ -56,7 +72,7 @@ const HomePage = () => {
                         <div className="smallContainerzero">
                             <img className="HeroImg" src={heroOne} alt="HeroOne" />
                         </div>
-                        <button className='bttnTypeTwo heroBtnMover'>
+                        <button className='bttnTypeTwo heroBtnMover' onClick={handleProjectsClick}>
                             VIEW PROJECT
                             <img className='bttnImg' src={frontIcon} alt="" />
                         </button>
@@ -83,7 +99,7 @@ const HomePage = () => {
                             specimen book. It has survived not only five centuries, but also the leap into 
                             electronic typesetting, remaining essentially unchanged.
                         </p>
-                        <button className='bttnTypeTwo'>READ MORE<img className='bttnImg' src={frontIcon} alt="" srcSet="" /></button>
+                        <button className='bttnTypeTwo' onClick={handleGalleryClick}>READ MORE<img className='bttnImg' src={frontIcon} alt="" srcSet="" /></button>
                     </div>
                 </div>
                 <div className="smallContainer2 flyGuy">
@@ -140,11 +156,11 @@ const HomePage = () => {
                 </div>
                 <div className='ThreeflexDiverOne'>
                     <div className='ThreeflexDiverOneChild1 projectH2Pusser'>
-                        <h5>Sample Project</h5>
+                        <h5 >Sample Project</h5>
                         <button className='bttnTypeThreeOne bttnUpTake'>VIEW MORE<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
                     </div>
                     <div className='ThreeflexDiverOneChild3 projectH2Pusser'>
-                        <button className='bttnTypeThree '>ALL PROJECTS<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
+                        <button className='bttnTypeThree ' onClick={ handleGalleryClick}>ALL PROJECTS<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
                     </div>
                 </div>
             </section>
@@ -163,7 +179,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className='ThreeflexDiverOneChild3 projectH2Pusser'>
-                        <button className='bttnTypeThreeFour '>SEND EMAIL<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
+                        <button className='bttnTypeThreeFour ' onClick={ handleContactsClick}>SEND EMAIL<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
                     </div>
             </section>
             <section className="footer">
