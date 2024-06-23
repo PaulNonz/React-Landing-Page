@@ -133,3 +133,8 @@ body .card{
   display: flex;
   flex-wrap: wrap;
 }
+
+
+body .footer .cur{
+  cursor: pointer;
+}

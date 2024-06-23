@@ -1,4 +1,4 @@
-// import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './container.css';
 import './bodyFlex.css';
@@ -16,6 +16,8 @@ import backIcon from '../img/arrow-left.png'
 import frontIcon from '../img/arrow-right.png'
 import frontIconWhite from '../img/arrow-right-white.png'
 import heroOne from '../img/hero-1.jpg'
+import heroTwo from '../img/img_2-3.jpg'
+import heroThree from '../img/gal_six.jpg'
 import lineArt from '../img/Line.png'
 import sessionTwoOne from '../img/img_2-1.jpg'
 import sessionTwoTwo from '../img/img_2-2.jpg'
@@ -37,6 +39,14 @@ import Message from '../img/messageIcon.png'
 const HomePage = () => {
     const navigate = useNavigate();
 
+    const handleMainClick = () => {
+        navigate('/');
+      };
+
+    const handleCertClick = () => {
+        navigate('/certification');
+    };
+    
     const handleGalleryClick = () => {
       navigate('/gallery');
     };
@@ -49,6 +59,23 @@ const HomePage = () => {
         navigate('/contacts');
     };
 
+    const handleMoreProjeClick = () => {
+        navigate('/moreInfoPage');
+    };
+
+    // CHANGE ICON PICTURES
+
+    const images = [heroOne, heroTwo, heroThree];
+    const [currentIndex, setCurrentIndex] = useState(0);
+  
+    const handleNextImage = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+  
+    const handlePreviousImage = () => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+  
 
     return (
         <div className='hide'>
@@ -58,19 +85,19 @@ const HomePage = () => {
                         <h1>PROJECT</h1>
                         <h2 className='lorumTakeup'>Lorum</h2>
                         <div className='ButtonSeperator'>
-                            <button className='bttnTypeOne HeroButtoTOp' type="submit">
+                            <button className='bttnTypeOne HeroButtoTOp' type="submit" onClick={handlePreviousImage}  >
                                 <img className='bttnImg' src={backIcon} alt="" />
                             </button>
-                            <button className='bttnTypeOne HeroButtoTOp' type="submit">
-                                <img className='bttnImg' src={frontIcon} alt="" />
+                            <button className='bttnTypeOne HeroButtoTOp' type="submit"onClick={handleNextImage} >
+                                <img className='bttnImg' src={frontIcon} alt=""  />
                             </button>
                             <img className='HeroButtonLine' src={lineArt} alt="" />
                         </div>
-                        <h4 className=''> <span className=''>0<span className='textWider'>1 </span></span>/  02</h4>
+                        <h4 className='LiftMe'> <span className=''>0<span className='textWider'>{currentIndex + 1} </span></span>/  03</h4>
                         </div>
                     <div className='TwoflexDividerChildOne2 HeroBackground'>
                         <div className="smallContainerzero">
-                            <img className="HeroImg" src={heroOne} alt="HeroOne" />
+                            <img className="HeroImg" src={images[currentIndex]}alt="HeroOne" />
                         </div>
                         <button className='bttnTypeTwo heroBtnMover' onClick={handleProjectsClick}>
                             VIEW PROJECT
@@ -79,7 +106,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className="container sectioTakeup ">
+            <section className="container  ">
                 <div className='ThreeflexDiverOne'>
                     <div className='ThreeflexDiverOneChild1'>
                         <div className="smallContainer1">
@@ -157,10 +184,10 @@ const HomePage = () => {
                 <div className='ThreeflexDiverOne'>
                     <div className='ThreeflexDiverOneChild1 projectH2Pusser'>
                         <h5 >Sample Project</h5>
-                        <button className='bttnTypeThreeOne bttnUpTake'>VIEW MORE<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
+                        <button className='bttnTypeThreeOne bttnUpTake' onClick={ handleMoreProjeClick}>VIEW MORE<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
                     </div>
                     <div className='ThreeflexDiverOneChild3 projectH2Pusser'>
-                        <button className='bttnTypeThree ' onClick={ handleGalleryClick}>ALL PROJECTS<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
+                        <button className='bttnTypeThree ' onClick={ handleProjectsClick}>ALL PROJECTS<img className='bttnImg3' src={frontIconWhite} alt="" srcSet="" /></button>
                     </div>
                 </div>
             </section>
@@ -190,11 +217,11 @@ const HomePage = () => {
                         </div>
                         <div className='flexer'>
                             <p className='bolder'>Information</p>
-                            <p>Main</p>
-                            <p>Gallery</p>
-                            <p>Projects</p>
-                            <p>Certifications</p>
-                            <p>Contacts</p>
+                            <p className='cur' onClick={handleMainClick }>Main</p>
+                            <p className='cur' onClick={handleGalleryClick }>Gallery</p>
+                            <p className='cur' onClick={handleProjectsClick}>Projects</p> 
+                            <p className='cur' onClick={handleCertClick }>Certifications</p>
+                            <p className='cur' onClick={handleContactsClick}>Contacts</p>
                         </div>
                         <div className='flexer'>
                             <p className='bolder'>Contacts</p>
@@ -206,7 +233,7 @@ const HomePage = () => {
                             <p></p>
                             <p><img src={Call} alt="" srcSet="" />512.333.2222</p>
                             <p></p>
-                            <p><img src={Message} alt="" srcSet="" />sampleemail@gmail.com</p>
+                            <p className='cur'><img src={Message} alt="" srcSet="" />sampleemail@gmail.com</p>
                         </div>
                         <div className='flexer'>
                             <p className='bolder'>Information</p>

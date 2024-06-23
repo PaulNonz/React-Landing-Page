@@ -7,6 +7,7 @@ import ProjectsPage from './components/ProjectsPage'
 import CertificatePage from './components/CertificatePage'
 import ContactPage from './components/ContactPage.jsx'
 import logo from '../src/img/logo.png'
+import ProjectTwoPage from './components/ProjectTwo.jsx'
 
 
 
@@ -41,6 +42,7 @@ function App() {
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/certification" element={<CertificatePage />} />
                 <Route path="/contacts" element={<ContactPage />} />
+                <Route path='/moreInfoPage' element={<ProjectTwoPage />} />
               </Routes>
             </div>
           </Router>

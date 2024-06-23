@@ -30,6 +30,10 @@ body .container{
     background-color: rgb(251, 243, 243);
   }
 
+body .LiftMe{
+  margin-top: -0.8%;
+}
+
   body .smallContainer22{
     overflow: hidden;
     width: 100%;
@@ -44,9 +48,18 @@ body .container{
   body .smallContainerzero{
     overflow: hidden;
     width: 100%;
+    /* height: 73%; */
+    height: 590px;
+    background-color: rgb(251, 243, 243);
+  }
+
+  body .smallContainerzerooo{
+    overflow: hidden;
+    width: 100%;
     height: 73%;
     background-color: rgb(251, 243, 243);
   }
+
 
   body .smallContainer1{
     overflow: hidden;
@@ -150,14 +163,7 @@ body .flexer:nth-child(1), .flexer:nth-child(2){
     margin-top: -3.8%;
     gap: 3.8%;
     background-color: #FBFBFB;
-  }
-
-  body .card:nth-child(2){
-    margin-top: 3.6%;
-  }
-
-  body .card:nth-child(3){
-    margin-top: 3.6%;
+    margin-bottom: 7%;
   }
 
   body .imagePortion{
@@ -187,4 +193,29 @@ body .flexer:nth-child(1), .flexer:nth-child(2){
     width: 80%;
     font-weight: 300;
     line-height: 25px;
+  }
+
+  body .NewProjContainer{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    margin-top: 3%;
+  }
+
+  body .smallContainerzeroo{
+    overflow: hidden;
+    width: 70%;
+    background-color: rgb(251, 243, 243);
+    margin-bottom: 3%;
+  }
+
+  body .NewProjContainer p{
+    width: 100%;
+    font-size: 13.5px;
+    line-height: 17px;
+    margin-top: -2%;
+  }
+
+  body .marger1{
+    margin-top: 6.2%;
   }
